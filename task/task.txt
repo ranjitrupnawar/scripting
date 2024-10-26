@@ -1,0 +1,40 @@
+Prerequisites:
+- Basic understanding of Linux commands and SSH.
+- Familiarity with cloud concepts and AWS Management Console.
+- Knowledge of web servers like NGINX or Apache.
+Task Overview:
+1. AWS Setup and Instance Management:
+- Create an AWS account (if you don’t have one).
+- Familiarize yourself with the AWS Management Console, focusing on EC2 services.
+- Launch two t2.micro EC2 instances using different operating systems (Amazon Linux and
+Ubuntu).
+2. Instance Management:
+- Start, stop, restart, and terminate EC2 instances.
+- Recreate the instances to reinforce instance management skills.
+3. SSH Configuration & Connectivity:
+- Set up SSH key pairs to allow secure connection to both EC2 instances.
+- Connect to both instances from your local machine using SSH.
+- Ensure ping and SSH connectivity between the two EC2 instances.
+- Configure security groups to allow ICMP (ping) and SSH traffic between instances.
+4. Web Server Installation:
+- Install NGINX or Apache on one of the EC2 instances (your choice of instance).
+- Create a simple HTML web page with the text: "Hello World" and information about the OS
+version.
+- Ensure that the web page is accessible from the internet (configure security groups to allow
+HTTP/HTTPS traffic).
+5. Cross-Instance Web Access:
+- From the EC2 instance without the web server, access the "Hello World" page hosted on the
+other instance.
+- Use curl or wget from the non-web server instance to fetch the page.
+6. Automation:
+- Write a shell script that automates the process of:
+1. Installing the web server (NGINX/Apache).
+2. Creating the "Hello World" web page.
+3. Configuring the necessary firewall rules (security groups) to allow HTTP/HTTPS traffic.
+- Ensure that this script can be executed after launching an EC2 instance to set up the web
+server and hosting automatically.
+Submission:
+- Provide a link to a public GitHub repository containing:
+- The shell script for automating the web server setup.
+- A brief README file explaining the steps and approach.
+- Share the public IP of the web server so we can verify the deployment
